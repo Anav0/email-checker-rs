@@ -1,0 +1,14 @@
+[package]
+name = "unread"
+version = "1.0.0"
+authors = ["Igor <igor_motyka@mail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.release]
+opt-level = "z"
+
+[dependencies]
+imap = "3.0.0-alpha.4"
+native-tls = "0.2.8"
+structopt = "0.3.23"
